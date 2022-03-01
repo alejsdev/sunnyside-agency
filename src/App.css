@@ -7,12 +7,12 @@ nav {
   display: flex;
   justify-content: space-between;
   color: white;
+  font-family: "Barlow", sans-serif;
 }
 
-h3 {
+.logo {
   margin: 20px;
 }
-
 
 ul {
   display: flex;
@@ -32,10 +32,50 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Fraunces", serif;
+  font-size: 54px;
+  letter-spacing: 8px;
 }
 
 header {
-  background-image: url("../public/images/desktop/image-header.jpg");
+  background-image: url("https://res.cloudinary.com/dtkdsolsz/image/upload/v1646108986/frontend%20mentor%20challenge/image-header_sj7rtb.jpg");
   background-size: cover;
   height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.container > div > img {
+  height: 100%;
+}
+
+.container > div > h3 {
+  margin: 40px;
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  color: #23303e;
+}
+
+.container > div > p {
+  margin: 0 40px;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  color: #818498;
+}
+
+.container > div > h4 {
+  margin: 40px;
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+  color: #23303e;
 }
