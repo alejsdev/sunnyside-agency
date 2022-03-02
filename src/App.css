@@ -48,6 +48,14 @@ header {
   height: 100vh;
 }
 
+.container > .left {
+  width: 50%;
+}
+
+.container > .right {
+  width: 50%;
+}
+
 .container > div {
   display: flex;
   flex-direction: column;
@@ -57,12 +65,13 @@ header {
 
 .container > div > img {
   height: 100%;
+  object-fit: cover;
 }
 
 .container > div > h3 {
   margin: 40px;
   font-family: "Fraunces", serif;
-  font-size: 40px;
+  font-size: 30px;
   color: #23303e;
 }
 
@@ -76,6 +85,89 @@ header {
 .container > div > h4 {
   margin: 40px;
   font-family: "Fraunces", serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #23303e;
+}
+
+.learn-1:hover {
+  cursor: pointer;
+  text-decoration: underline #fad400;
+}
+
+.learn-2:hover {
+  cursor: pointer;
+  text-decoration: underline #fe7867;
+}
+
+.container > .graphic {
+  background-image: url("https://res.cloudinary.com/dtkdsolsz/image/upload/v1646108986/frontend%20mentor%20challenge/image-graphic-design_m92roc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.graphic > p,
+.photography > p {
+  margin: 20px;
+  padding: 40px;
+  color: #23303e;
+}
+
+.container > .photography {
+  background-image: url("https://res.cloudinary.com/dtkdsolsz/image/upload/v1646108987/frontend%20mentor%20challenge/image-photography_t0sskq.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.title-testimonials {
+  color: gray;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 24px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.testimonial {
+  text-align: center;
+  margin: 0 50px;
+}
+
+.testimonial > img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 60px;
+}
+
+.testimonial > h4 {
+  font-family: "Fraunces", serif;
+}
+
+.testimonial > p {
+  font-family: "Barlow", sans-serif;
+  margin: 20px;
+}
+
+.container-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container-gallery > img {
+  width: 25%;
 }
