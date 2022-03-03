@@ -4,10 +4,12 @@
 }
 
 nav {
+  background-color: #3ebfff;
   display: flex;
   justify-content: space-between;
   color: white;
   font-family: "Barlow", sans-serif;
+  max-width: 100%;
 }
 
 .logo {
@@ -18,16 +20,25 @@ ul {
   display: flex;
   justify-content: left;
   list-style: none;
+  max-width: 100%;
 }
 
 ul > li {
   margin: 20px;
+  padding: 4px;
+  font-weight: bolder;
+}
+
+li:hover {
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
 }
 
 h1 {
   color: white;
   text-align: center;
-  margin: 80px;
+  margin: 34px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,12 +51,37 @@ h1 {
 header {
   background-image: url("https://res.cloudinary.com/dtkdsolsz/image/upload/v1646108986/frontend%20mentor%20challenge/image-header_sj7rtb.jpg");
   background-size: cover;
+  background-position: top center;
   height: 100vh;
+  width: 100%;
+}
+
+.arrow-down {
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.container-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   display: flex;
   height: 100vh;
+  max-width: 100%;
 }
 
 .container > .left {
@@ -91,12 +127,12 @@ header {
 
 .learn-1:hover {
   cursor: pointer;
-  text-decoration: underline #fad400;
+  text-decoration: underline #fad400 4px;
 }
 
 .learn-2:hover {
   cursor: pointer;
-  text-decoration: underline #fe7867;
+  text-decoration: underline #fe7867 4px;
 }
 
 .container > .graphic {
@@ -110,11 +146,11 @@ header {
   text-align: center;
 }
 
-.graphic > p,
-.photography > p {
+.container .graphic > p,
+.container .photography > p {
   margin: 20px;
   padding: 40px;
-  color: #23303e;
+  color: #1b1b1b;
 }
 
 .container > .photography {
@@ -128,10 +164,19 @@ header {
   text-align: center;
 }
 
+.container-testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
 .title-testimonials {
-  color: gray;
+  margin: 20px 0;
+  width: 100%;
+  color: #5e5e5e;
   text-align: center;
-  margin-top: 100px;
   font-size: 24px;
 }
 
@@ -139,7 +184,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 40px;
 }
 
 .testimonial {
@@ -150,7 +195,6 @@ header {
 .testimonial > img {
   width: 80px;
   border-radius: 50%;
-  margin-bottom: 60px;
 }
 
 .testimonial > h4 {
@@ -171,3 +215,116 @@ header {
 .container-gallery > img {
   width: 25%;
 }
+
+.container-footer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #90d4c5;
+  height: 30vh;
+}
+
+.icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #2a7261;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  nav {
+    max-width: 100%;
+  }
+
+  header {
+    height: 100vh;
+    max-width: 100%;
+  }
+
+  h1 {
+    max-width: 100%;
+    font-size: 24px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .container {
+    height: 100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .container > div > h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .container > div > h4 {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px;
+  }
+
+  .container > div > p {
+    text-align: center;
+    font-size: 18px;
+    max-width: 100%;
+    margin: 10px;
+  }
+
+  .container > .left {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .container > .right {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .container .graphic,
+  .container .photography {
+    height: 100vh;
+  }
+
+  .container .graphic > p,
+  .container .photography > p {
+    color: #1b1b1b;
+  }
+
+  .container-testimonials {
+    height: auto;
+  }
+
+  .testimonials {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .title-testimonials {
+    max-width: 100%;
+  }
+
+  .testimonial {
+    max-width: 100%;
+  }
+
+  .container-gallery > img {
+    width: 50%;
+  }
+}
+
+/* 
+
+
+
+} */

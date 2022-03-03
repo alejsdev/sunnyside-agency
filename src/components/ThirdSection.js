@@ -16,7 +16,7 @@ const ThirdSection = () => {
           photographers, videographers, and copywriters, we'll build and extend
           your brand in digital places.
         </p>
-        <h4 className="learn-1">Learn More</h4>
+        <h4 className="learn-2">Learn More</h4>
       </div>
     </section>
   );
