@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sunnyside-agency/static/css/main.04035b48.css",
+    "main.js": "/sunnyside-agency/static/js/main.cb1df169.js",
+    "index.html": "/sunnyside-agency/index.html",
+    "main.04035b48.css.map": "/sunnyside-agency/static/css/main.04035b48.css.map",
+    "main.cb1df169.js.map": "/sunnyside-agency/static/js/main.cb1df169.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04035b48.css",
+    "static/js/main.cb1df169.js"
+  ]
+}
