@@ -1,11 +1,11 @@
 import "./App.css";
 import FirstSection from "./components/FirstSection";
-import Footer from "./components/Footer";
-import FourthSection from "./components/FourthSection";
-import Gallery from "./components/Gallery";
 import SecondSection from "./components/SecondSection";
-import Testimonials from "./components/Testimonials";
 import ThirdSection from "./components/ThirdSection";
+import FourthSection from "./components/FourthSection";
+import Testimonials from "./components/Testimonials";
+import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
 
 function App() {
   return (
